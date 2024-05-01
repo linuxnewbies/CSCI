@@ -39,7 +39,7 @@ div.nav > .donor {
 div.nav > .donor:hover {
     transform: scale(1.25);
     animation: bounce 0.5s ease-in-out infinite alternate;
-  }
+    cursor: cell;  }
 
   
   @keyframes bounce {
