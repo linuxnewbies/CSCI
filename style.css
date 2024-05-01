@@ -36,6 +36,21 @@ div.nav > .donor {
     border-radius: 2.5px;
     color: white;
 }
+div.nav > .donor:hover {
+    transform: scale(1.25);
+    animation: bounce 0.5s ease-in-out infinite alternate;
+  }
+
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px); /* Adjust bounce height as needed */
+    }
+  }
+  
 div.nav > .home {
     background: #acacac;
     padding: 5px 5px 5px 5px;
@@ -53,10 +68,12 @@ div.nav > .home {
     display: inline-block;
     background-size: 1099.75%;
     border-radius: 5px;
+    
 }
 .social:hover {
-    animation-name: mirza;
-    animation-duration: 5s;
+    animation: mirza 1s 1;
+    border-radius: 25px 25px 25px 25px;
+    
 }
 
 
@@ -86,11 +103,10 @@ div.nav > .home {
 /* Mirza's Animations Starts */
 
 @keyframes mirza {
-    0% {border-radius: 5px;}
-    25% {border-radius: 5px 10px 5px 10px;}
-    50% {border-radius: 10px 15px 10px 15px;}
-    75% {border-radius: 10px 5px 10px 5px;}
-    100% {border-radius: 5px;}
-  }
+    0% {border-radius: 15px 5px 5px 5px;}
+    33% {border-radius: 15px 15px 5px 5px;}
+    33% {border-radius: 15px 15px 15px 5px;}
+    100% {border-radius: 15px 15px 15px 15px;}
+    }
 
 /* Mirza's Animations End */
