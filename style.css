@@ -1,0 +1,70 @@
+/* Antorjatik Settings */
+a {
+    text-decoration: none;
+    color: black;
+}
+/* Settings End */
+
+/* Navigation er Utpotti */
+
+div.nav {
+height: 100%;
+display: grid;
+grid-template-columns: repeat(7, auto);
+grid-gap: 5px;
+justify-content: center;
+font-weight: bold;
+font-family: 'Varela Round';
+}
+
+div.nav > div
+{
+  height: 20px;
+  background: #ffffff;
+  margin: auto;
+  padding: 0; 
+}
+
+div.nav > .home,div.nav > .about,div.nav > .contact,div.nav > .join,div.nav > .donor
+{
+    margin: auto;
+    padding: 20px 2.5px 15px 2.5px;
+}
+div.nav > .donor {
+    background: #008c27;
+    padding: 5px 5px 5px 5px;
+    border-radius: 2.5px;
+    color: white;
+}
+div.nav > .home {
+    background: #acacac;
+    padding: 5px 5px 5px 5px;
+    border-radius: 2.5px;
+    color: rgb(0, 0, 0);
+}
+
+/* Navigation Er Shomapti */
+
+/* Social Buttons Shuru */
+
+.social {
+    background-image: url(./img/social.webp);
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-size: 1099.75%;
+    border-radius: 5px;
+}
+
+.facebook {
+    width: 30px;
+    height: 30px;
+    background-position: 0px -30px;
+    margin: -5px 0px 0px 0px;
+}
+.linkedin {
+    width: 30px;
+    height: 30px;
+    background-position: -120px -30px;
+    margin: -5px 0px 0px 0px;
+}
+/* Social Buttons Shesh */
