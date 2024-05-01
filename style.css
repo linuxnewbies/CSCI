@@ -54,6 +54,12 @@ div.nav > .home {
     background-size: 1099.75%;
     border-radius: 5px;
 }
+.social:hover {
+    animation-name: mirza;
+    animation-duration: 5s;
+}
+
+
 
 .facebook {
     width: 30px;
@@ -75,3 +81,16 @@ div.nav > .home {
     margin: -5px 0px 0px 0px;
 }
 /* Social Buttons Shesh */
+
+
+/* Mirza's Animations Starts */
+
+@keyframes mirza {
+    0% {border-radius: 5px;}
+    25% {border-radius: 5px 10px 5px 10px;}
+    50% {border-radius: 10px 15px 10px 15px;}
+    75% {border-radius: 10px 5px 10px 5px;}
+    100% {border-radius: 5px;}
+  }
+
+/* Mirza's Animations End */
