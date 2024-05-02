@@ -1,3 +1,77 @@
+/* Anju Flex Starts */
+.contents {
+height: 100%;
+display: grid;
+grid-template-columns: repeat(12, 1fr);
+grid-template-rows: auto;
+grid-template-areas:
+"🤕 🤕 🤕 🤕 🤕 🤕 🤕 🤕 🤕 🤕 🤕 🤕"
+"🍔 🍔 🍔 🍔 🍔 🍔 🍔 🍔 🍔 🍔 🍔 🍔"
+"📰 📰 📰 📰 📰 📰 📰 📰 📰 📰 📰 📰"
+"🙌 🙌 🙌 🙌 🙌 🙌 🧻 🧻 🧻 🧻 🧻 🧻"
+"📓 📓 📓 📓 📓 📓 📓 📓 📓 📓 📓 📓"
+"👣 👣 👣 👣 👣 👣 👣 👣 👣 👣 👣 👣"
+;}
+
+.footer{
+width: 100%;
+display: grid;
+grid-template-columns: repeat(12, 1fr);
+grid-template-rows: auto;
+grid-template-areas:
+". .  📛 📛 🍁 🍁 🍁 🍁 📲 📲 . . "
+;}
+/* Anju Flex Ends */
+
+/* Flex Selectors Starts*/
+.header {
+    grid-area: 🤕 ;
+}
+.navigation {
+    grid-area: 🍔 ;    
+}
+
+.recent {
+    grid-area: 📰 ;
+
+}
+.abul {
+    grid-area: 🙌 ;
+
+}
+.kabul {
+    grid-area: 🧻 ;
+}
+.contacts {
+    grid-area: 📓 ;
+}
+.footer {
+    grid-area: 👣 ;
+}
+
+#navigation {
+    grid-area: 📛 ;
+}
+#map {
+    grid-area: 🍁 ;
+    }
+
+#social {
+    grid-area: 📲; 
+}
+
+/* Flex Selectors End */
+
+
+
+
+
+
+
+
+
+
+
 /* Antorjatik Settings */
 a {
     text-decoration: none;
