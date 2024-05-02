@@ -48,12 +48,66 @@
     </div>
 <div class="recent">
 <h2>Some Recents Elements</h2>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro illo amet, optio iure cum dolorum? Nemo ex quia animi fuga numquam, iste velit facilis nobis dicta quasi quisquam reiciendis similique?
-Labore fugiat magni eius sit maxime possimus dolore voluptatibus consequuntur sequi incidunt pariatur dolorem facilis ipsum minus voluptas ullam ad rerum impedit iure perspiciatis nam suscipit, temporibus minima odio! Sequi.
-Fuga consectetur nesciunt repudiandae soluta. Nostrum est vero repellat assumenda hic totam suscipit amet dicta temporibus, aperiam eligendi eos facilis repellendus provident autem iure, reiciendis ipsum reprehenderit placeat repudiandae harum!
-Obcaecati dolor odit quos possimus asperiores nesciunt provident inventore et recusandae tempore assumenda, laborum sed hic distinctio repellat quia? Suscipit nostrum reiciendis totam corporis facere magni aut repudiandae doloribus explicabo!
-Vel ratione reprehenderit exercitationem, natus rem quis, sequi libero nobis aliquid recusandae dicta consequuntur aliquam harum, esse corrupti. Id quia, numquam enim maiores mollitia totam odio illo natus? Non, ea!
-</p>
+<div class="slideshow-container">
+    
+    <div class="recent_images slider_img_effect">
+      <div class="img_no">1 / 3</div>
+      <img class="rimg" src="./img/img_nature_wide.jpg"/>
+      <div class="img_text">Caption Text</div>
+    </div>
+    
+    <div class="recent_images slider_img_effect">
+      <div class="img_no">2 / 3</div>
+      <img class="rimg" src="./img/img_snow_wide.jpg"/>
+      <div class="img_text">Caption Two</div>
+    </div>
+    
+    <div class="recent_images slider_img_effect">
+      <div class="img_no">3 / 3</div>
+      <img class="rimg" src="./img/img_mountains_wide.jpg"/>
+      <div class="img_text">Caption Three</div>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center;display:none;">
+      <span class="img_dots" onclick="currentSlide(1)"></span> 
+      <span class="img_dots" onclick="currentSlide(2)"></span> 
+      <span class="img_dots" onclick="currentSlide(3)"></span> 
+    </div>
+    
+    <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("recent_images");
+      let img_dotss = document.getElementsByClassName("img_dots");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < img_dotss.length; i++) {
+        img_dotss[i].className = img_dotss[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      img_dotss[slideIndex-1].className += " active";
+    }
+    </script>
 </div>
 
 <div class="abul">

@@ -1,4 +1,42 @@
+/* Anjus Ex's Responsiveness starts */
+/* For mobile phones: */
+@media (orientation: portrait) {
+
+
+    
+.contents {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    "🤕 🤕 🤕 🤕 🤕 🤕 🤕 🤕 🤕 🤕 🤕 🤕"
+    "🍔 🍔 🍔 🍔 🍔 🍔 🍔 🍔 🍔 🍔 🍔 🍔"
+    "📰 📰 📰 📰 📰 📰 📰 📰 📰 📰 📰 📰"
+    "🙌 🙌 🙌 🙌 🙌 🙌 🙌 🙌 🙌 🙌 🙌 🙌"
+    "🧻 🧻 🧻 🧻 🧻 🧻 🧻 🧻 🧻 🧻 🧻 🧻"
+    "📓 📓 📓 📓 📓 📓 📓 📓 📓 📓 📓 📓"
+    "👣 👣 👣 👣 👣 👣 👣 👣 👣 👣 👣 👣"
+    ;}
+    
+    .footer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    "📛 📛 📛 📛 📛 📛 📛 📛 📛 📛 📛 📛"
+    "🍁 🍁 🍁 🍁 🍁 🍁 🍁 🍁 📲 📲 📲 📲"
+    ;}
+
+  
+  }
+/* Anjus Ex's Responsiveness Ends */
+
 /* Anju Flex Starts */
+/* For Wider Screen: */
+@media (orientation: landscape) {
+
 .contents {
 height: 100%;
 display: grid;
@@ -21,31 +59,39 @@ grid-template-rows: auto;
 grid-template-areas:
 ". .  📛 📛 🍁 🍁 🍁 🍁 📲 📲 . . "
 ;}
+}
 /* Anju Flex Ends */
 
 /* Flex Selectors Starts*/
 .header {
+    user-select: none;
     grid-area: 🤕 ;
 }
 .navigation {
+    user-select: none;
     grid-area: 🍔 ;    
 }
 
 .recent {
+    user-select: none;
     grid-area: 📰 ;
 
 }
 .abul {
+    user-select: none;
     grid-area: 🙌 ;
 
 }
 .kabul {
+    user-select: none;
     grid-area: 🧻 ;
 }
 .contacts {
+    user-select: none;
     grid-area: 📓 ;
 }
 .footer {
+    user-select: none;
     grid-area: 👣 ;
 }
 
@@ -177,10 +223,108 @@ div.nav > .home {
 /* Mirza's Animations Starts */
 
 @keyframes mirza {
-    0% {border-radius: 15px 5px 5px 5px;}
-    33% {border-radius: 15px 15px 5px 5px;}
-    33% {border-radius: 15px 15px 15px 5px;}
+    0% {border-radius: 5px 5px 5px 5px;}
+    25% {border-radius: 15px 5px 5px 5px;}
+    50% {border-radius: 15px 15px 5px 5px;}
+    75% {border-radius: 15px 15px 15px 5px;}
     100% {border-radius: 15px 15px 15px 15px;}
     }
 
 /* Mirza's Animations End */
+
+
+
+
+
+
+/* Slider Ex Starts */
+.recent_images {display: none}
+img.rimg {
+    vertical-align: middle;
+    object-fit:cover;height:250px;width: 100%;}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.img_text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.img_no {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The img_dotss/bullets/indicators */
+.img_dots {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .img_dots:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.slider_img_effect {
+  animation-name: slider_img_effect;
+  animation-duration: 1.5s;
+}
+
+@keyframes slider_img_effect {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.img_text {font-size: 11px}
+}
+/* Slider Ex Ends */
