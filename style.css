@@ -1,6 +1,14 @@
 /* Anjus Ex's Responsiveness starts */
 /* For mobile phones: */
 @media (orientation: portrait) {
+  div.nav
+  {
+    grid-template-columns: repeat(4, auto);
+  }
+
+  .abul > p, .kabul > p
+  { margin: -5px 5px 5px 2.5px;
+    border-radius: 0px 0px 5px 5px; }
 
   div.contacts_flex {
     height: auto;
@@ -21,13 +29,13 @@
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
     grid-template-areas:
-    "🤕 🤕 🤕 🤕 🤕 🤕 🤕 🤕 🤕 🤕 🤕 🤕"
-    "🍔 🍔 🍔 🍔 🍔 🍔 🍔 🍔 🍔 🍔 🍔 🍔"
-    "📰 📰 📰 📰 📰 📰 📰 📰 📰 📰 📰 📰"
-    "🙌 🙌 🙌 🙌 🙌 🙌 🙌 🙌 🙌 🙌 🙌 🙌"
-    "🧻 🧻 🧻 🧻 🧻 🧻 🧻 🧻 🧻 🧻 🧻 🧻"
-    "📓 📓 📓 📓 📓 📓 📓 📓 📓 📓 📓 📓"
-    "👣 👣 👣 👣 👣 👣 👣 👣 👣 👣 👣 👣"
+    " 🤕 🤕 🤕 🤕 🤕 🤕 🤕 🤕 🤕 🤕 🤕 🤕 "
+    " 🍔 🍔 🍔 🍔 🍔 🍔 🍔 🍔 🍔 🍔 🍔 🍔 "
+    " 📰 📰 📰 📰 📰 📰 📰 📰 📰 📰 📰 📰 "
+    " 🙌 🙌 🙌 🙌 🙌 🙌 🙌 🙌 🙌 🙌 🙌 🙌 "
+    " 🧻 🧻 🧻 🧻 🧻 🧻 🧻 🧻 🧻 🧻 🧻 🧻 "
+    " 📓 📓 📓 📓 📓 📓 📓 📓 📓 📓 📓 📓 "
+    " 👣 👣 👣 👣 👣 👣 👣 👣 👣 👣 👣 👣 "
     ;}
     
     .footer{
@@ -48,9 +56,24 @@
 /* For Wider Screen: */
 @media (orientation: landscape) {
 
+div.nav {
+  grid-template-columns: repeat(8, auto);
+}
+
+
+  .abul > p, .kabul > p {
+margin: -5px 15px 0px 2.5px;
+border-radius: 0px 0px 15px 5px;
+  }
+
 #msg_area {  
   margin-left: 20px;
 }
+
+h2#notice,h2#sheba {
+  clip-path: polygon(0% 0px, 105% 0px, 98% 100%, 0% 100%);
+}
+
   div.contacts_flex {
     height: auto;
     display: grid;
@@ -69,12 +92,12 @@ display: grid;
 grid-template-columns: repeat(12, 1fr);
 grid-template-rows: auto;
 grid-template-areas:
-"🤕 🤕 🤕 🤕 🤕 🤕 🤕 🤕 🤕 🤕 🤕 🤕"
-"🍔 🍔 🍔 🍔 🍔 🍔 🍔 🍔 🍔 🍔 🍔 🍔"
-"📰 📰 📰 📰 📰 📰 📰 📰 📰 📰 📰 📰"
-"🙌 🙌 🙌 🙌 🙌 🙌 🧻 🧻 🧻 🧻 🧻 🧻"
-" . . . 📓 📓 📓 📓 📓 📓 . . ."
-"👣 👣 👣 👣 👣 👣 👣 👣 👣 👣 👣 👣"
+" . 🤕 🤕 🤕 🤕 🤕 🤕 🤕 🤕 🤕 🤕 . "
+" . 🍔 🍔 🍔 🍔 🍔 🍔 🍔 🍔 🍔 🍔 . "
+" . 📰 📰 📰 📰 📰 📰 📰 📰 📰 📰 . "
+" . 🙌 🙌 🙌 🙌 🙌 🧻 🧻 🧻 🧻 🧻 . "
+" . . .  📓 📓 📓 📓 📓 📓 . . . "
+" . 👣 👣 👣 👣 👣 👣 👣 👣 👣 👣 . "
 ;}
 
 .footer{
@@ -196,6 +219,13 @@ a {
     text-decoration: none;
     color: black;
 }
+
+.abul > p, .kabul > p {
+  padding: 10px;
+  background-color: beige;
+  
+}
+
 /* Settings End */
 
 /* Navigation er Utpotti */
@@ -203,7 +233,6 @@ a {
 div.nav {
 height: 100%;
 display: grid;
-grid-template-columns: repeat(8, auto);
 grid-gap: 5px;
 justify-content: center;
 font-weight: bold;
@@ -416,7 +445,6 @@ h2#notice,h2#sheba {
     background-image: linear-gradient(to top right, #008c27, #00a830);
     border-radius: 5px 5px 5px 5px;
     user-select: none;
-    clip-path: polygon(0% 0px, 105% 0px, 98% 100%, 0% 100%);
 }
 h2#recent {
     display: inline;
