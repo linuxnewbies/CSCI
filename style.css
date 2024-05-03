@@ -5,7 +5,9 @@
   {
     grid-template-columns: repeat(4, auto);
   }
-
+textarea {
+  resize: vertical;
+}
   .abul > p, .kabul > p
   { margin: -5px 5px 5px 2.5px;
     border-radius: 0px 0px 5px 5px; }
