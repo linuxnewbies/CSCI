@@ -2,7 +2,18 @@
 /* For mobile phones: */
 @media (orientation: portrait) {
 
-
+  div.contacts_flex {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    ". 💁 💁 💁 💁 💁 💁 💁 💁 💁 💁 ."
+    ". 🎤 🎤 🎤 🎤 🎤 🎤 🎤 🎤 🎤 🎤 ."
+    ;
+    font-weight: bold;
+    font-family: 'Varela Round';
+}
     
 .contents {
     height: 100%;
@@ -37,6 +48,21 @@
 /* For Wider Screen: */
 @media (orientation: landscape) {
 
+#msg_area {  
+  margin-left: 20px;
+}
+  div.contacts_flex {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    ". . 💁 💁 💁 💁 🎤 🎤 🎤 🎤 . .";
+    font-weight: bold;
+    font-family: 'Varela Round';
+}
+
+
 .contents {
 height: 100%;
 display: grid;
@@ -63,6 +89,10 @@ grid-template-areas:
 /* Anju Flex Ends */
 
 /* Flex Selectors Starts*/
+
+div#info { grid-area : 💁 ;}
+div#msg_area { grid-area : 🎤 ;}
+
 .header {
     user-select: none;
     grid-area: 🤕 ;
@@ -112,7 +142,50 @@ grid-template-areas:
 
 
 
+    /* Contact Form Styles Starts */
+    
 
+    
+    
+    fieldset {
+      background-color: #eeeeee;
+      border-radius: 10px;
+      border: solid 5px #008C27;
+    }
+    
+    
+    legend {
+    
+        display: inline;
+        font-family: "Tiro Bangla", serif;
+        font-style: normal;
+        display: block;
+        color: white;
+        font-size: medium;
+        font-weight: bold;
+        padding: 10px 10px 10px 10px;
+        margin: 5px 5px 5px 0px;
+        background-color: #00a830;
+        background-image: linear-gradient(to top right, #00a830, #008c27);
+        border-radius: 5px 5px 5px 5px;
+        user-select: none;
+    }
+    
+    input {
+      margin: 2px auto 2px auto;
+      width: 80%;
+      height: 25px;
+      border: solid 1px #008c27;
+      border-radius: 5px;
+    }
+    textarea {
+      height: auto;
+      max-height: 300px;
+      min-height: 50px;
+      border: solid 1px #008c27;
+      border-radius: 5px;
+  }
+    /* Contact Form Styles Ends */
 
 
 
@@ -328,3 +401,36 @@ img.rimg {
   .prev, .next,.img_text {font-size: 11px}
 }
 /* Slider Ex Ends */
+
+/* Horny H2 Designs Starts */
+h2#notice,h2#sheba {
+    font-family: "Tiro Bangla", serif;
+    font-style: normal;
+    display: block;
+    color: white;
+    font-size: medium;
+    font-weight: bold;
+    padding: 10px 10px 10px 10px;
+    margin: 5px 5px 5px 0px;
+    background-color: #00a830;
+    background-image: linear-gradient(to top right, #008c27, #00a830);
+    border-radius: 5px 5px 5px 5px;
+    user-select: none;
+    clip-path: polygon(0% 0px, 105% 0px, 98% 100%, 0% 100%);
+}
+h2#recent {
+    display: inline;
+    font-family: "Tiro Bangla", serif;
+    font-style: normal;
+    display: block;
+    color: white;
+    font-size: medium;
+    font-weight: bold;
+    padding: 10px 10px 10px 10px;
+    margin: 5px 5px 5px 0px;
+    background-color: #00a830;
+    background-image: linear-gradient(to top right, #00a830, #008c27);
+    border-radius: 5px 5px 5px 5px;
+    user-select: none;
+}
+/* Horny H2 Designs Ends */
