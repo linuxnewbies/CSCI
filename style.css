@@ -243,9 +243,6 @@ a:hover {
   color: #008C27;
   font-weight: bolder;
 }
-#active:hover {
-
-}
 a {
     text-decoration: none;
     color: black;
@@ -378,7 +375,7 @@ div.nav > .donor:hover {
 div.recent_slider {
 
   border-radius: 25px;
-  margin: auto 5px auto 5px;
+  margin: -2.5px 5px -20px 5px;
 }
 
 .slider_nipples {
