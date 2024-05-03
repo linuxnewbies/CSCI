@@ -41,15 +41,17 @@ textarea {
     " 👣 👣 👣 👣 👣 👣 👣 👣 👣 👣 👣 👣 "
     ;}
     
-    .footer{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto;
-    grid-template-areas:
-    "📛 📛 📛 📛 📛 📛 📛 📛 📛 📛 📛 📛"
-    "🍁 🍁 🍁 🍁 🍁 🍁 🍁 🍁 📲 📲 📲 📲"
-    ;}
+    .footer {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: auto;
+      grid-template-areas:
+      "📛 📛 📛 📛 🍁 🍁 🍁 🍁 🍁 🍁 🍁 🍁"
+      "📛 📛 📛 📛 📲 📲 📲 📲 📲 📲 📲 📲";
+      align-items: center;
+      justify-items: stretch;
+  }
 
   
   }
@@ -103,14 +105,14 @@ grid-template-areas:
 "  . . .   👣 👣 👣 👣 👣 👣  . . .   "
 ;}
 
-.footer{
-width: 100%;
-display: grid;
-grid-template-columns: repeat(12, 1fr);
-grid-template-rows: auto;
-grid-template-areas:
-". .  📛 📛 🍁 🍁 🍁 🍁 📲 📲 . . "
-;}
+.footer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "📛 📛 📛 . 🍁 🍁 🍁 🍁 . . 📲 📲";
+  align-items: center;
+}
 }
 /* Anju Flex Ends */
 
@@ -197,9 +199,11 @@ div#msg_area { grid-area : 🎤 ;}
         user-select: none;
     }
     
+input[type=text],input[type=number],input[type=email]{
+  margin: 2px auto 2px auto;
+  width: 80%;
+}    
     input {
-      margin: 2px auto 2px auto;
-      width: 80%;
       height: 25px;
       border: solid 1px #008c27;
       border-radius: 5px;
@@ -218,10 +222,36 @@ div#msg_area { grid-area : 🎤 ;}
 
 
 /* Antorjatik Settings */
+input[type=button]{
+  width: auto;
+}
+li > a:hover , input[type=button]:hover {
+  font-family: 'Varela Round';
+  font-style: normal;
+  display: block;
+  color: white;
+  font-weight: bold;
+  padding: 5px 5px 5px 5px;
+  background-color: #00a830;
+  background-image: linear-gradient(to top right, #00a830, #008c27);
+  border-radius: 5px 5px 5px 5px;
+  user-select: none;
+}
+
+a:hover {
+  text-decoration: solid;
+  color: #008C27;
+  font-weight: bolder;
+}
+#active:hover {
+
+}
 a {
     text-decoration: none;
     color: black;
-}
+    font-family: 'Varela Round';
+
+    }
 
 .abul > p, .kabul > p {
   padding: 10px;
@@ -229,7 +259,15 @@ a {
   
 }
 
-/* Settings End */
+/* footer */
+.footer {
+  font-family: 'Varela Round';
+  }
+ul > li {
+color: #008C27;
+}
+
+/* Antorjatik Settings End */
 
 /* Navigation er Utpotti */
 
@@ -276,13 +314,6 @@ div.nav > .donor:hover {
     }
   }
   
-div.nav > .home {
-    background: #acacac;
-    padding: 5px 5px 5px 5px;
-    border-radius: 2.5px;
-    color: rgb(0, 0, 0);
-}
-
 /* Navigation Er Shomapti */
 
 /* Social Buttons Shuru */
@@ -343,7 +374,17 @@ div.nav > .home {
 
 
 /* Slider Ex Starts */
-.recent_images {display: none}
+
+div.recent_slider {
+
+  border-radius: 25px;
+  margin: auto 5px auto 5px;
+}
+
+.slider_nipples {
+margin-top: -35px;
+display: none;
+}
 img.rimg {
     vertical-align: middle;
     object-fit:cover;height:250px;width: 100%;}
@@ -385,11 +426,14 @@ img.rimg {
 .img_text {
   color: #f2f2f2;
   font-size: 15px;
-  padding: 8px 12px;
   position: absolute;
-  bottom: 8px;
-  width: 100%;
+  bottom: 0px;
+  width: auto;
   text-align: center;
+  background-color: #008c2869;
+  border-radius: 0px 5px 0px 0px;
+  padding: 5px;
+  font-family: 'Noto Serif Bengali';
 }
 
 /* Number text (1/3 etc) */
